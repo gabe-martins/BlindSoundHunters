@@ -1,0 +1,51 @@
+VERSION = 1,
+
+option BlindSoundHunters.HearingMultiplier
+{
+    type = double,
+    min = 0.1,
+    max = 5.0,
+    default = 1.0,
+    page = BlindSoundHunters,
+    translation = BSH_HearingMultiplier,
+}
+
+option BlindSoundHunters.MinSoundRadius
+{
+    type = integer,
+    min = 0,
+    max = 100,
+    default = 5,
+    page = BlindSoundHunters,
+    translation = BSH_MinSoundRadius,
+}
+
+option BlindSoundHunters.Strength
+{
+    type = enum,
+    numValues = 3,
+    default = 1,
+    page = BlindSoundHunters,
+    translation = BSH_Strength,
+    valueTranslation = BSH_Strength,
+}
+
+option BlindSoundHunters.AlertMemorySeconds
+{
+    type = integer,
+    min = 1,
+    max = 120,
+    default = 15,
+    page = BlindSoundHunters,
+    translation = BSH_AlertMemorySeconds,
+}
+
+option BlindSoundHunters.SilenceSeconds
+{
+    type = integer,
+    min = 0,
+    max = 30,
+    default = 2,
+    page = BlindSoundHunters,
+    translation = BSH_SilenceSeconds,
+}

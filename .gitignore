@@ -1,0 +1,16 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# Local tooling
+.claude/
+*.bak
+*.log
+__pycache__/
+
+# Game output that may end up here by accident
+console.txt

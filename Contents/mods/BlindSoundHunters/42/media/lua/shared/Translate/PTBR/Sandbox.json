@@ -1,0 +1,16 @@
+{
+    "Sandbox_BlindSoundHunters": "Caçadores Cegos de Som",
+    "Sandbox_BSH_HearingMultiplier": "Multiplicador de Audição",
+    "Sandbox_BSH_HearingMultiplier_tooltip": "Multiplica o raio de todo som válido do mundo ao decidir quais zumbis o escutam.",
+    "Sandbox_BSH_MinSoundRadius": "Raio Mínimo de Som",
+    "Sandbox_BSH_MinSoundRadius_tooltip": "Sons com raio base abaixo deste valor (em tiles) são ignorados pelos zumbis cegos.",
+    "Sandbox_BSH_Strength": "Força dos Zumbis",
+    "Sandbox_BSH_Strength_tooltip": "Força aplicada a todo zumbi quando seus atributos são inicializados ou sua velocidade muda.",
+    "Sandbox_BSH_Strength_option1": "Sobre-humana",
+    "Sandbox_BSH_Strength_option2": "Normal",
+    "Sandbox_BSH_Strength_option3": "Fraca",
+    "Sandbox_BSH_AlertMemorySeconds": "Memória de Alerta (segundos)",
+    "Sandbox_BSH_AlertMemorySeconds_tooltip": "Por quanto tempo um zumbi correndo continua indo até um som antes de desistir e voltar a vagar devagar.",
+    "Sandbox_BSH_SilenceSeconds": "Silêncio para Escapar (segundos)",
+    "Sandbox_BSH_SilenceSeconds_tooltip": "Em combate tátil, o jogador precisa estar a mais de 1.8 tiles e não fazer nenhum som por esse tempo para o zumbi perdê-lo."
+}

@@ -1,0 +1,16 @@
+{
+    "Sandbox_BlindSoundHunters": "Blind Sound Hunters",
+    "Sandbox_BSH_HearingMultiplier": "Hearing Multiplier",
+    "Sandbox_BSH_HearingMultiplier_tooltip": "Multiplies the radius of every valid world sound when deciding which zombies hear it.",
+    "Sandbox_BSH_MinSoundRadius": "Minimum Sound Radius",
+    "Sandbox_BSH_MinSoundRadius_tooltip": "Sounds with a base radius below this value (in tiles) are ignored by blind zombies.",
+    "Sandbox_BSH_Strength": "Zombie Strength",
+    "Sandbox_BSH_Strength_tooltip": "Strength applied to every zombie when its stats are initialized or its speed changes.",
+    "Sandbox_BSH_Strength_option1": "Superhuman",
+    "Sandbox_BSH_Strength_option2": "Normal",
+    "Sandbox_BSH_Strength_option3": "Weak",
+    "Sandbox_BSH_AlertMemorySeconds": "Alert Memory (seconds)",
+    "Sandbox_BSH_AlertMemorySeconds_tooltip": "How long a sprinting zombie keeps running toward a sound before giving up and shambling again.",
+    "Sandbox_BSH_SilenceSeconds": "Silence to Escape (seconds)",
+    "Sandbox_BSH_SilenceSeconds_tooltip": "In tactile combat, the player must be farther than 1.8 tiles and make no sound for this long for the zombie to lose them."
+}
