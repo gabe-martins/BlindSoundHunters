@@ -1,5 +1,7 @@
 name=Blind Sound Hunters
 id=BlindSoundHunters
 description=Zombies are completely blind. They hunt by sound, sprinting toward noises, and only lock onto you through physical contact.
+author=Gabriel Martins
+url=https://github.com/gabe-martins/BlindSoundHunters
 modversion=1.0.0
 versionMin=42.0.0
