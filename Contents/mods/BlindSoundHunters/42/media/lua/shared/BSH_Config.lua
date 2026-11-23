@@ -35,6 +35,7 @@ BSH.Config = {
     HearingMultiplier  = 1.0,
     MinSoundRadius     = 5,
     Strength           = 1,   -- 1 Superhuman, 2 Normal, 3 Weak
+    SprintOnSound      = true, -- false: alerted zombies walk to the sound instead of sprinting
     AlertMemorySeconds = 15,
     SilenceSeconds     = 2,
     -- derived
@@ -60,6 +61,7 @@ function BSH.refreshConfig()
     cfg.HearingMultiplier  = clamp(tonumber(sv.HearingMultiplier) or 1.0, 0.1, 5.0)
     cfg.MinSoundRadius     = clamp(tonumber(sv.MinSoundRadius) or 5, 0, 100)
     cfg.Strength           = clamp(math.floor(tonumber(sv.Strength) or 1), 1, 3)
+    cfg.SprintOnSound      = sv.SprintOnSound ~= false
     cfg.AlertMemorySeconds = clamp(tonumber(sv.AlertMemorySeconds) or 15, 1, 120)
     cfg.SilenceSeconds     = clamp(tonumber(sv.SilenceSeconds) or 2, 0, 30)
 

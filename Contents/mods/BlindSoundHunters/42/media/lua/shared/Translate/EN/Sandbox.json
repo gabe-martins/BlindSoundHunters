@@ -9,8 +9,10 @@
     "Sandbox_BSH_Strength_option1": "Superhuman",
     "Sandbox_BSH_Strength_option2": "Normal",
     "Sandbox_BSH_Strength_option3": "Weak",
+    "Sandbox_BSH_SprintOnSound": "Sprint Toward Sounds",
+    "Sandbox_BSH_SprintOnSound_tooltip": "When on, alerted zombies sprint toward the sound. When off, they only walk toward it at walking speed.",
     "Sandbox_BSH_AlertMemorySeconds": "Alert Memory (seconds)",
-    "Sandbox_BSH_AlertMemorySeconds_tooltip": "How long a sprinting zombie keeps running toward a sound before giving up and shambling again.",
+    "Sandbox_BSH_AlertMemorySeconds_tooltip": "How long an alerted zombie keeps moving toward a sound before giving up and shambling again.",
     "Sandbox_BSH_SilenceSeconds": "Silence to Escape (seconds)",
     "Sandbox_BSH_SilenceSeconds_tooltip": "In tactile combat, the player must be farther than 1.8 tiles and make no sound for this long for the zombie to lose them."
 }

@@ -9,8 +9,10 @@
     "Sandbox_BSH_Strength_option1": "Sobre-humana",
     "Sandbox_BSH_Strength_option2": "Normal",
     "Sandbox_BSH_Strength_option3": "Fraca",
+    "Sandbox_BSH_SprintOnSound": "Correr até os Sons",
+    "Sandbox_BSH_SprintOnSound_tooltip": "Quando ativado, zumbis alertados correm até o som. Quando desativado, eles apenas caminham até ele em velocidade de caminhada.",
     "Sandbox_BSH_AlertMemorySeconds": "Memória de Alerta (segundos)",
-    "Sandbox_BSH_AlertMemorySeconds_tooltip": "Por quanto tempo um zumbi correndo continua indo até um som antes de desistir e voltar a vagar devagar.",
+    "Sandbox_BSH_AlertMemorySeconds_tooltip": "Por quanto tempo um zumbi alertado continua indo até um som antes de desistir e voltar a vagar devagar.",
     "Sandbox_BSH_SilenceSeconds": "Silêncio para Escapar (segundos)",
     "Sandbox_BSH_SilenceSeconds_tooltip": "Em combate tátil, o jogador precisa estar a mais de 1.8 tiles e não fazer nenhum som por esse tempo para o zumbi perdê-lo."
 }

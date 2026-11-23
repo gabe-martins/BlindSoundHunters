@@ -188,8 +188,9 @@ local function startAlert(zombie, md, i, intensity)
     md.BSH_alertMs = nowMs
     if md.BSH_state ~= STATE_ALERT then
         md.BSH_state = STATE_ALERT
-        if md.BSH_speed ~= SPEED_SPRINTER then
-            applyStats(zombie, md, SPEED_SPRINTER)
+        local speed = Config.SprintOnSound and SPEED_SPRINTER or SPEED_SHAMBLER
+        if md.BSH_speed ~= speed then
+            applyStats(zombie, md, speed)
         end
     end
     moveToSound(zombie, md.BSH_tx, md.BSH_ty, md.BSH_tz)

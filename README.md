@@ -31,7 +31,7 @@ Every zombie is always in one of three states:
 | State | Behavior |
 |---|---|
 | **Wandering** (blind) | Shambles slowly and takes short random walks. It cannot see you, even face to face. |
-| **Alerted** (sprinting) | Heard a valid sound: becomes a sprinter and runs to where the sound came from. Louder and closer sounds take priority. It calms down on arrival, or after a while without new sounds. |
+| **Alerted** (sprinting) | Heard a valid sound: becomes a sprinter and runs to where the sound came from (or walks there, if **Sprint Toward Sounds** is off). Louder and closer sounds take priority. It calms down on arrival, or after a while without new sounds. |
 | **Tactile combat** | Bumped into you, or was hit or shoved by you: **only that zombie** locks onto you and attacks. To lose it, get farther than 1.8 tiles and stay completely silent for a moment. |
 
 ### What counts as a sound
@@ -52,7 +52,8 @@ Every world sound the game emits is considered: gunshots, engines, horns, sirens
 | Hearing Multiplier | 1.0 (0.1–5.0) | Multiplies how far every sound reaches. |
 | Minimum Sound Radius | 5 (0–100) | Sounds with a smaller base radius (in tiles) are ignored. |
 | Zombie Strength | Superhuman | Strength of every zombie: Superhuman, Normal or Weak. |
-| Alert Memory | 15 s (1–120) | How long a sprinting zombie keeps chasing a sound before giving up. |
+| Sprint Toward Sounds | On | When on, alerted zombies sprint toward the sound. When off, they only walk toward it. |
+| Alert Memory | 15 s (1–120) | How long an alerted zombie keeps chasing a sound before giving up. |
 | Silence to Escape | 2 s (0–30) | How long you must be silent and at a distance to escape tactile combat. |
 
 ### Implementation notes

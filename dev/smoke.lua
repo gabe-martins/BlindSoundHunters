@@ -7,7 +7,7 @@ local clock = 1000000
 function getTimestampMs() return clock end
 local rnd = 0
 function ZombRand(n) rnd = rnd + 1; return rnd % n end
-SandboxVars = { BlindSoundHunters = { HearingMultiplier = 1.0, MinSoundRadius = 5, Strength = 1, AlertMemorySeconds = 15, SilenceSeconds = 2 } }
+SandboxVars = { BlindSoundHunters = { HearingMultiplier = 1.0, MinSoundRadius = 5, Strength = 1, SprintOnSound = true, AlertMemorySeconds = 15, SilenceSeconds = 2 } }
 local function opt(v) return {v=v, getValue=function(s) return s.v end, setValue=function(s,x) s.v=x end} end
 -- World set to Shambler (3): worst case, doZombieSpeed(1) only sprints if the lore option is swapped.
 local lore = { ["ZombieLore.Speed"]=opt(3), ["ZombieLore.Strength"]=opt(2) }
@@ -68,6 +68,12 @@ local w0 = z.wanders; clock = clock + 40000; for i=1,6 do clock=clock+20000; run
 check(z.wanders > w0 and z.md.BSH_state==S.IDLE_WANDER, "IDLE: mod-driven random wander ("..(z.wanders-w0)..")")
 fire("OnWorldSound", 20, 20, 0, 30, 30, player); run(10); clock=clock+16000; run(10)
 check(z.md.BSH_state==S.IDLE_WANDER, "memory expiry -> IDLE")
+SandboxVars.BlindSoundHunters.SprintOnSound = false; BSH.refreshConfig()
+fire("OnWorldSound", 20, 20, 0, 30, 30, player); run(10)
+check(z.md.BSH_state==S.ALERT_SPRINT and z.speed==3 and z.px==20, "SprintOnSound=false: alerted zombie walks to the sound")
+clock=clock+16000; run(10)
+SandboxVars.BlindSoundHunters.SprintOnSound = true; BSH.refreshConfig()
+check(z.md.BSH_state==S.IDLE_WANDER and z.speed==3, "SprintOnSound=false: memory expiry -> IDLE")
 player.x, player.y = z.x+0.5, z.y; run(10)
 check(z.md.BSH_state==S.TACTILE_COMBAT and z.target==player and not z.useless and z.goal=="char", "collision -> TACTILE lock (vanilla targeting on)")
 player.x = z.x+1.0; fire("OnWorldSound", 1, 1, 0, 1, 1, player); clock=clock+3000; run(10)

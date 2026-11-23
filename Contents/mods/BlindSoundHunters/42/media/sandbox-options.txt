@@ -30,6 +30,14 @@ option BlindSoundHunters.Strength
     valueTranslation = BSH_Strength,
 }
 
+option BlindSoundHunters.SprintOnSound
+{
+    type = boolean,
+    default = true,
+    page = BlindSoundHunters,
+    translation = BSH_SprintOnSound,
+}
+
 option BlindSoundHunters.AlertMemorySeconds
 {
     type = integer,
